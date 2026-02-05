@@ -1,5 +1,3 @@
 ---
-title: "Home"
+title: "ホーム"
 ---
-Welcome!
-What is the best thing to do now?

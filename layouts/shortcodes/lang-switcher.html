@@ -1,0 +1,19 @@
+{{ if .Page.IsTranslated }}
+<div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+  <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+    {{ if eq .Page.Language.Lang "ja" }}English version{{ else }}日本語版{{ end }}
+  </p>
+  <div class="flex flex-wrap gap-3">
+    {{ range .Page.Translations }}
+    <a href="{{ .RelPermalink }}" 
+       class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors duration-200 shadow-sm hover:shadow">
+      {{ if eq .Language.Lang "ja" }}
+        <span class="mr-2">🇯🇵</span> 日本語で読む
+      {{ else }}
+        <span class="mr-2">🇺🇸</span> Read in English
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

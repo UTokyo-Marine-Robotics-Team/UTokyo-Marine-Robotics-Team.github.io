@@ -1,6 +1,8 @@
-+++
-aliases = ["posts", "articles", "blog", "showcase", "docs"]
-title = "Posts"
-author = "Hugo Authors"
-tags = ["index"]
-+++
+---
+title: "Blog"
+description: "東京大学海洋ロボット研究会の活動報告・技術記事"
+---
+
+開発の進捗、競技会のレポート、技術的な学びなどを発信しています。
+
+---

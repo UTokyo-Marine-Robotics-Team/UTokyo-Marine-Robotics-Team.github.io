@@ -1,0 +1,13 @@
+[
+  {
+    "title": "東京大学海洋ロボット研究会 — 海の未来を、ロボットで拓く",
+    "image": "img/default.jpg",
+    "alt": "Marine robotics"
+  },
+  {
+    "title": "自律型水中ロボットの研究開発",
+    "image": "img/default.jpg",
+    "alt": "Autonomous underwater vehicles",
+    "color": "text-white"
+  }
+]

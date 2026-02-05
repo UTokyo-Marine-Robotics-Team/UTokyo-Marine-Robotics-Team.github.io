@@ -1,14 +1,100 @@
 baseURL = "https://localhost:1313"
 title = "東京大学海洋ロボット研究会"
 author = "東京大学海洋ロボット研究会"
-languageCode = "jp"
-DefaultContentLanguage = "jp"
+languageCode = "ja"
+defaultContentLanguage = "ja"
 enableInlineShortcodes = true
 theme = "tella"
 enableRobotsTXT = true
 
 # Please enable this feature if the site is available in Japanese, Chinese or Korean.
 hasCJKLanguage = true
+
+# Multilingual: Japanese (default) and English
+[languages]
+  [languages.ja]
+    languageCode = "ja"
+    languageName = "日本語"
+    weight = 1
+    title = "東京大学海洋ロボット研究会"
+
+    [[languages.ja.menus.main]]
+      identifier = "about"
+      name = "About us"
+      pageRef = "/about/"
+      weight = 1
+    [[languages.ja.menus.main]]
+      identifier = "project"
+      name = "Project"
+      pageRef = "/project/"
+      weight = 2
+    [[languages.ja.menus.main]]
+      identifier = "blog"
+      name = "Blog"
+      pageRef = "/blog/"
+      weight = 3
+    [[languages.ja.menus.main]]
+      identifier = "recruitment"
+      name = "Recruitment"
+      pageRef = "/recruitment/"
+      weight = 4
+    [[languages.ja.menus.main]]
+      identifier = "contact"
+      name = "Contact"
+      pageRef = "/contact/"
+      weight = 5
+
+    [[languages.ja.menus.footer]]
+      name = "Home"
+      pageRef = "/"
+      weight = 1
+    [[languages.ja.menus.footer]]
+      name = "Github"
+      url = "https://github.com/UTokyo-Marine-Robotics-Team"
+      pre = "<i class='icon-github text-2xl'></i>"
+      weight = 2
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 2
+    title = "UTokyo Marine Robotics Team"
+
+    [[languages.en.menus.main]]
+      identifier = "about"
+      name = "About us"
+      pageRef = "/about/"
+      weight = 1
+    [[languages.en.menus.main]]
+      identifier = "project"
+      name = "Project"
+      pageRef = "/project/"
+      weight = 2
+    [[languages.en.menus.main]]
+      identifier = "blog"
+      name = "Blog"
+      pageRef = "/blog/"
+      weight = 3
+    [[languages.en.menus.main]]
+      identifier = "recruitment"
+      name = "Recruitment"
+      pageRef = "/recruitment/"
+      weight = 4
+    [[languages.en.menus.main]]
+      identifier = "contact"
+      name = "Contact"
+      pageRef = "/contact/"
+      weight = 5
+
+    [[languages.en.menus.footer]]
+      name = "Home"
+      pageRef = "/"
+      weight = 1
+    [[languages.en.menus.footer]]
+      name = "Github"
+      url = "https://github.com/UTokyo-Marine-Robotics-Team"
+      pre = "<i class='icon-github text-2xl'></i>"
+      weight = 2
 
 # If you're using Google Analytics, you can enable this feature.
 #googleAnalytics = "UA-12345678-1"
@@ -39,55 +125,12 @@ hasCJKLanguage = true
     fontawesome = true
 
   [params.homepage_meta_tags]
-    meta_description = "A Hugo Theme for OSSProject, Companies, Organization..."
-    meta_og_title = "Tella"
+    meta_description = "東京大学海洋ロボット研究会 - 自律型水中ロボットの研究開発"
+    meta_og_title = "東京大学海洋ロボット研究会"
     meta_og_type = "website"
-    meta_og_url = "https://tella.pages.dev"
-    meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
-    meta_og_description = "A Hugo Theme for OSSProject, Companies, Organization..."
+    meta_og_url = "https://utokyo-marine-robotics-team.github.io"
+    meta_og_image = "https://raw.githubusercontent.com/UTokyo-Marine-Robotics-Team/UTokyo-Marine-Robotics-Team.github.io/main/themes/tella/images/tn.png"
+    meta_og_description = "東京大学海洋ロボット研究会 - 自律型水中ロボット（AUV）・遠隔操作型ロボット（ROV）の研究開発"
     meta_twitter_card = "summary_large_image"
     meta_twitter_site = "@username"
     meta_twitter_creator = "@username"
-
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About us"
-    url = "/about/"
-    weight = 1
-  
-  [[menu.main]]
-    identifier = "project"
-    name = "Project"
-    url = "/project/"
-    weight = 2
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "recruitment"
-    name = "Recruitment"
-    url = "/recruitment/"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
-
-  # Footer Menu
-  [[menu.footer]]
-    name = "Home"
-    url = "/"
-      weight = 1
-
-  [[menu.footer]]
-    name = "Github"
-    url = "https://github.com/UTokyo-Marine-Robotics-Team"
-    pre = "<i class='icon-github text-2xl'></i>"
-      weight = 2

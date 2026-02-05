@@ -1,0 +1,6 @@
+{{ $contact := .Site.GetPage "/contact" }}
+{{ if $contact }}
+<a href="{{ $contact.RelPermalink }}">{{ if eq .Site.Language.Lang "ja" }}お問い合わせ{{ else }}Contact{{ end }}</a>
+{{ else }}
+<a href="{{ "contact" | relLangURL }}/">{{ if eq .Site.Language.Lang "ja" }}お問い合わせ{{ else }}Contact{{ end }}</a>
+{{ end }}
