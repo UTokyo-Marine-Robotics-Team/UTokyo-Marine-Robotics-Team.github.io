@@ -22,9 +22,17 @@
     </div>
     <nav class="bg-opacity-100 px-6 sm:px-8 py-6">
         <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
+            {{ $logo := resources.Get "no_name.png" }}
             <div class="flex items-center flex-shrink-0 text-xl text-grey-900">
-                <a href="{{ .Site.Home.RelPermalink }}"><img alt="{{ .Site.Params.logo.alt }}"
-                        class="{{ .Site.Params.logo.size }} mr-3" src="{{ .Site.Params.logo.main | relURL }}"></a>
+                <a href="{{ .Site.Home.RelPermalink }}">
+                    {{ if $logo }}
+                    <img alt="{{ .Site.Params.logo.alt }}" class="{{ .Site.Params.logo.size }} mr-3"
+                        src="{{ $logo.RelPermalink }}">
+                    {{ else }}
+                    <img alt="{{ .Site.Params.logo.alt }}" class="{{ .Site.Params.logo.size }} mr-3"
+                        src="{{ .Site.Params.logo.main | relURL }}">
+                    {{ end }}
+                </a>
             </div>
             <div class="block lg:hidden">
                 <div id="hamburgerbtn" class="flex cursor-pointer items-center w-14 h-10 py-2 rounded mopen">

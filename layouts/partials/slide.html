@@ -1,0 +1,23 @@
+{{ $slides := .Site.Data.slide }}
+{{ if $slides }}
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {{ range $slides }}
+        <div class="swiper-slide">
+            {{ $img := resources.Get .image }}
+            {{ if $img }}
+            <img src="{{ $img.RelPermalink }}" alt="{{ .alt }}">
+            {{ else }}
+            <img src="{{ .image | relURL }}" alt="{{ .alt }}">
+            {{ end }}
+            <div class="s-fade-txt">
+                <h1 class="text-4xl {{ or .color "text-white" }}">{{ .title }}</h1>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+{{ end }}
+

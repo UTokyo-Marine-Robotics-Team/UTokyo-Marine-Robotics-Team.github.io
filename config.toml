@@ -16,7 +16,7 @@ hasCJKLanguage = true
     languageCode = "ja"
     languageName = "日本語"
     weight = 1
-    title = "東京大学海洋ロボット研究会"
+    title = "東京大学海洋ロボット研究会 | Blue Hacks"
 
     [[languages.ja.menus.main]]
       identifier = "about"
