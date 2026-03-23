@@ -97,7 +97,7 @@ hasCJKLanguage = true
       weight = 2
 
 # If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "UA-12345678-1"
+googleAnalytics = "UA-12345678-1"
 
 # Disqus Comment System
 #disqusShortname = ""
@@ -125,8 +125,6 @@ hasCJKLanguage = true
     fontawesome = true
 
   [params.homepage_meta_tags]
-    meta_name = "google-site-verification"
-    meta_content= "m3kydaDUsFO8MondUnyeiDoF-fgoyQJ1iSbBY3QZINI"
     meta_description = "東京大学海洋ロボット研究会 - 自律型水中ロボットの研究開発"
     meta_og_title = "東京大学海洋ロボット研究会"
     meta_og_type = "website"
