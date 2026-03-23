@@ -97,7 +97,7 @@ hasCJKLanguage = true
       weight = 2
 
 # If you're using Google Analytics, you can enable this feature.
-googleAnalytics = "UA-12345678-1"
+googleAnalytics = "G-90JQK6YXQN"
 
 # Disqus Comment System
 #disqusShortname = ""
